@@ -11,8 +11,10 @@ public class Sql2oTaskDaoTest {
 
     @BeforeClass
     public static void setUp() throws Exception {
-        String connectionString = "jdbc:postgresql://localhost:5432/todolist_test"; // connect to postgres test database
-        Sql2o sql2o = new Sql2o(connectionString, "postgres", "password");         // changed user and pass to null
+//        String connectionString = "jdbc:postgresql://localhost:5432/todolist_test"; // connect to postgres test database
+//        Sql2o sql2o = new Sql2o(connectionString, "postgres", "password");         // changed user and pass to null
+        String connectionString = "jdbc:postgresql://ec2-52-44-55-63.compute-1.amazonaws.com:5432/d1uqfs9rbf30or";
+        Sql2o sql2o = new Sql2o(connectionString, "udgmurhdmykicz", "493342110738d914f3cd6540c3ab0fa84e1f4c71dbd47b8fd6f7f3ee6e2a3484");
         taskDao = new Sql2oTaskDao(sql2o);
         conn = sql2o.open();                                                        // open connection once before this test file is run
     }
