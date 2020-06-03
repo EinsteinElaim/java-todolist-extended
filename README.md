@@ -1,5 +1,5 @@
 # Java-Week3-To Do List With DB
-###Description
+### Description
 This project is a todo list app that allows a user to manage his/her tasks with efficiency. It also has category integration so that you can group your tasks. 
 
 ### Live Link
